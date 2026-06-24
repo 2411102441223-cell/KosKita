@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDF7"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#854F0B"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📝"
+            android:textSize="40sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar Akun Baru"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KosKita"
+            android:textColor="#FAC775"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="24dp"
+            android:paddingBottom="24dp">
+
+            <!-- Pilih Role -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar sebagai"
+                android:textColor="#2C2C2A"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <!-- Role Penghuni -->
+                <LinearLayout
+                    android:id="@+id/rolePenghuni"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:background="#854F0B"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏠"
+                        android:textSize="28sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penghuni"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"/>
+                    <TextView
+                        android:id="@+id/tvCheckPenghuni"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✓ Dipilih"
+                        android:textColor="#FAC775"
+                        android:textSize="11sp"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+
+                <!-- Role Pemilik -->
+                <LinearLayout
+                    android:id="@+id/rolePemilik"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="#DDDDDD"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔑"
+                        android:textSize="28sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pemilik"
+                        android:textColor="#2C2C2A"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"/>
+                    <TextView
+                        android:id="@+id/tvCheckPemilik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tap untuk pilih"
+                        android:textColor="#888780"
+                        android:textSize="11sp"
+                        android:layout_marginTop="4dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Form Input -->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Lengkap"
+                app:boxStrokeColor="#854F0B"
+                app:hintTextColor="#854F0B"
+                android:layout_marginBottom="14dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                app:boxStrokeColor="#854F0B"
+                app:hintTextColor="#854F0B"
+                android:layout_marginBottom="14dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:boxStrokeColor="#854F0B"
+                app:hintTextColor="#854F0B"
+                app:passwordToggleEnabled="true"
+                android:layout_marginBottom="14dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Konfirmasi Password"
+                app:boxStrokeColor="#854F0B"
+                app:hintTextColor="#854F0B"
+                app:passwordToggleEnabled="true"
+                android:layout_marginBottom="14dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etKonfirmasiPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Nomor Kamar (hanya Penghuni) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutNomorKamar"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Kamar (contoh: 2B)"
+                app:boxStrokeColor="#854F0B"
+                app:hintTextColor="#854F0B"
+                android:layout_marginBottom="24dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etNomorKamar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Tombol Daftar -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDaftar"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Daftar Sekarang"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="#854F0B"
+                app:cornerRadius="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Link ke Login -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sudah punya akun? "
+                    android:textColor="#888780"
+                    android:textSize="13sp"/>
+                <TextView
+                    android:id="@+id/tvMasuk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masuk"
+                    android:textColor="#854F0B"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

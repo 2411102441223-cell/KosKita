@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.KosKita" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#EF9F27</item>
+        <item name="colorPrimaryVariant">#BA7517</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSurface">@color/kk_surface</item>
+        <item name="colorOnSurface">@color/kk_text_primary</item>
+        <item name="android:statusBarColor">#1A1A1A</item>
+        <item name="android:windowBackground">@color/kk_bg</item>
+        <item name="android:textColorPrimary">@color/kk_text_primary</item>
+        <item name="android:textColorSecondary">@color/kk_text_secondary</item>
+    </style>
+</resources>

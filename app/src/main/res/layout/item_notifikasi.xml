@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/bg_menu_card"
+    android:orientation="horizontal"
+    android:padding="14dp">
+
+    <!-- Dot belum dibaca -->
+    <View
+        android:id="@+id/viewDotBelumDibaca"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_dot_warn"/>
+
+    <!-- Konten -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvJudulNotif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#2C2C2A"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvIsiNotif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5F5E5A"
+            android:textSize="12sp"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:id="@+id/tvWaktuNotif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#888780"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    <!-- Tombol hapus -->
+    <TextView
+        android:id="@+id/btnHapusNotif"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:text="✕"
+        android:textColor="#888780"
+        android:textSize="14sp"/>
+
+</LinearLayout>

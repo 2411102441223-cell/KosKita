@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="kk_primary">#EF9F27</color>
+    <color name="kk_primary_dark">#BA7517</color>
+    <color name="kk_primary_mid">#EF9F27</color>
+    <color name="kk_primary_surface">#2C1F0A</color>
+    <color name="kk_primary_border">#4A3010</color>
+    <color name="kk_warn_dot">#EF9F27</color>
+    <color name="kk_ok_dot">#5DCAA5</color>
+    <color name="kk_bg">#121212</color>
+    <color name="kk_bg_dark">#121212</color>
+    <color name="kk_surface">#1E1E1E</color>
+    <color name="kk_border">#2E2E2E</color>
+    <color name="kk_text_primary">#F0F0F0</color>
+    <color name="kk_text_secondary">#BBBBBB</color>
+    <color name="kk_text_hint">#888780</color>
+    <color name="kk_text_on_primary">#FFFFFF</color>
+    <color name="kk_text_on_primary_muted">#FAC775</color>
+    <color name="kk_text_on_primary_sub">#FAEEDA</color>
+    <color name="kk_status_lunas">#5DCAA5</color>
+    <color name="kk_status_lunas_bg">#0D2E20</color>
+    <color name="kk_status_tunggak">#FF7070</color>
+    <color name="kk_status_tunggak_bg">#2E0D0D</color>
+</resources>

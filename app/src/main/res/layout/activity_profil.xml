@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kk_bg"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/kk_primary"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/kk_primary_mid"
+            android:gravity="center"
+            android:text="👤"
+            android:textSize="36sp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/tvNamaProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penghuni"
+            android:textColor="@color/kk_text_on_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvEmailProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@koskita.com"
+            android:textColor="@color/kk_text_on_primary_muted"
+            android:textSize="13sp"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvRoleBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/kk_primary_mid"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="Penghuni"
+            android:textColor="@color/kk_text_on_primary"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Edit Profil -->
+            <LinearLayout
+                android:id="@+id/menuEditProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:layout_marginBottom="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✏️" android:textSize="20sp" android:layout_marginEnd="12dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Edit Profil" android:textColor="@color/kk_text_primary" android:textSize="13sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/kk_primary" android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- Kelola Kamar (Pemilik) -->
+            <LinearLayout
+                android:id="@+id/menuRiwayatBayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏠" android:textSize="20sp" android:layout_marginEnd="12dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Kelola Kamar" android:textColor="@color/kk_text_primary" android:textSize="13sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/kk_primary" android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- Tagihan Kamar (Pemilik) -->
+            <LinearLayout
+                android:id="@+id/menuTagihan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💰" android:textSize="20sp" android:layout_marginEnd="12dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Tagihan Kamar" android:textColor="@color/kk_text_primary" android:textSize="13sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/kk_primary" android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- Kelola Request (Pemilik) -->
+            <LinearLayout
+                android:id="@+id/menuKelolaRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🔧" android:textSize="20sp" android:layout_marginEnd="12dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Kelola Request" android:textColor="@color/kk_text_primary" android:textSize="13sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/kk_primary" android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- Kelola Akun Penghuni (Pemilik) -->
+            <LinearLayout
+                android:id="@+id/menuKelolaAkun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👥" android:textSize="20sp" android:layout_marginEnd="12dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Kelola Akun Penghuni" android:textColor="@color/kk_text_primary" android:textSize="13sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/kk_primary" android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- Dark Mode -->
+            <LinearLayout
+                android:id="@+id/menuDarkMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:layout_marginBottom="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🌙" android:textSize="20sp" android:layout_marginEnd="12dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Dark Mode" android:textColor="@color/kk_text_primary" android:textSize="13sp" android:textStyle="bold"/>
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchDarkMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:thumbTint="@color/kk_primary"
+                    app:trackTint="@color/kk_primary_surface"/>
+            </LinearLayout>
+
+            <!-- Bantuan -->
+            <LinearLayout
+                android:id="@+id/menuBantuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp"
+                android:layout_marginBottom="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="❓" android:textSize="20sp" android:layout_marginEnd="12dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Bantuan" android:textColor="@color/kk_text_primary" android:textSize="13sp" android:textStyle="bold"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="@color/kk_primary" android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- Keluar -->
+            <LinearLayout
+                android:id="@+id/menuKeluar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FCEBEB"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="14dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🚪" android:textSize="20sp" android:layout_marginEnd="12dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Keluar" android:textColor="#A32D2D" android:textSize="13sp" android:textStyle="bold"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

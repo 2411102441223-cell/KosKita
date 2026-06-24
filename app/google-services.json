@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "300711134744",
+    "project_id": "koskita-43bf1",
+    "storage_bucket": "koskita-43bf1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300711134744:android:85b4c163627add790ee56d",
+        "android_client_info": {
+          "package_name": "com.example.koskita"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0MKgfAxY3qODYyVjvD8_Q-RSdUGI_Cro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

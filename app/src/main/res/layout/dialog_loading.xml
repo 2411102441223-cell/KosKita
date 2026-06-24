@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_menu_card"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="28dp"
+    android:minWidth="180dp">
+
+    <ProgressBar
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:indeterminateTint="#854F0B"
+        android:layout_marginBottom="12dp"/>
+
+    <TextView
+        android:id="@+id/tvPesanLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memuat data..."
+        android:textColor="@color/kk_text_primary"
+        android:textSize="13sp"
+        android:gravity="center"/>
+
+</LinearLayout>

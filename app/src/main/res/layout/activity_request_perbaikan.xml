@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDF7"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#854F0B"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="#33FFFFFF"
+            android:gravity="center"
+            android:text="←"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Perbaikan"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Body -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Kategori -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori Masalah"
+                android:textColor="#2C2C2A"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/kategoriListrik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#854F0B"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="⚡ Listrik"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:id="@+id/kategoriAir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_menu_card"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="💧 Air"
+                        android:textColor="#2C2C2A"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:id="@+id/kategoriPintu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_menu_card"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="🚪 Pintu"
+                        android:textColor="#2C2C2A"
+                        android:textSize="12sp"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:id="@+id/kategoriLainnya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_menu_card"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="🔨 Lainnya"
+                        android:textColor="#2C2C2A"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Deskripsi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi Masalah"
+                android:textColor="#2C2C2A"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ceritakan masalah yang terjadi..."
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDeskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Upload Foto -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foto Pendukung (Opsional)"
+                android:textColor="#2C2C2A"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/btnUploadFoto"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/bg_menu_card"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📷"
+                    android:textSize="28sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap untuk ambil foto"
+                    android:textColor="#888780"
+                    android:textSize="12sp"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+
+            <!-- Riwayat Request -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Request"
+                android:textColor="#2C2C2A"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRiwayatRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Tombol Kirim -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnKirimRequest"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Kirim Request"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:backgroundTint="#854F0B"
+            app:cornerRadius="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>
